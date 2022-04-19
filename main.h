@@ -2,23 +2,21 @@
 #define MAIN_H
 
 #include <stdlib.h>
-#include <stdarg.h>
-#include <stdio.h>
-#include <limits.h>
 #include <unistd.h>
-#include <string.h>
+#include <stdarg.h>
 
-int ini_printf(const char *format, va_list args);
-int _printf(const char *format, ...);
 int _putchar(char c);
-void option_c(const char *format, va_list args, char *buffer, int counter);
-void testing(char *string);
-int option_s(const char *format, va_list args, char *buffer, int counter);
-void d_i_printf(char *a);
-int print_d(va_list d);
-int print_i(va_list i);
-void unsignde_number_to_string(int number, int base, char *buffer);
-int ini_printf_di(const char *format, va_list args);
-void number_to_string(int number, int base, char *buffer);
+int _printf(const char *format, ...);
+int print_num(long int n);
+int print_string(char *str);
+int print_binary(unsigned int num);
+int print_unknown_spec(char c);
+int print_odh(char c, unsigned int num);
+int dec_to_oct(unsigned int num);
+int dec_to_hex(char c, unsigned int num);
+int print_S(char *);
+int print_reverse(char *s);
+int print_rot13(char *c);
+int print_pointer(void *p);
 
 #endif
